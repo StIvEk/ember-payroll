@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'payroll',
     environment: environment,
-    rootURL: '/payroll',
+    rootURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
