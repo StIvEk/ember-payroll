@@ -1,6 +1,12 @@
 <h1>Employees Payroll</h1>
 
-{{#each model as |modelItem|}}
-    {{employee-details employee=modelItem}}
-{{/each}}
+{{#employees-filter
+    filter=(action 'filterByName')
+    as |employees|}}
+    <ul class="results">
+        {{#each model as |modelItem|}}
+            {{employee-details employee=modelItem}}
+        {{/each}}
+    </ul>
+{{/employees-filter}}
 
