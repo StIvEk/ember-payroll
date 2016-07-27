@@ -33,7 +33,7 @@ let employees = [{
         dob: "18/05/1992",
         age: 23,
         salary: 26389.00,
-        takeHome: 21032.00
+        takeHome: 21032.00,
         incomeTax: 3157.80,
         nationalInsurance: 2199.48
     }];
