@@ -1,26 +1,6 @@
 <h1>Employees Payroll</h1>
 
-{{#each model as |employee|}}
-  <article>
-    <h3>{{employee.title}} {{employee.firstName}} {{employee.surname}}</h3>
-    <div>
-      <span>Gender:</span> {{employee.gender}}
-    </div>
-    <div>
-      <span>DOB:</span> {{employee.dob}}
-    </div>
-    <div>
-      <span>Age:</span> {{employee.age}}
-    </div>
-    <div>
-      <span>Salary:</span> {{employee.salary}}
-    </div> <div>
-      <span>Income Tax:</span> {{employee.incomeTax}}
-    </div> <div>
-      <span>National Insurance:</span> {{employee.nationalInsurance}}
-    </div> <div>
-      <span>Take home salary:</span> {{employee.takeHome}}
-    </div>
-  </article>
+{{#each model as |modelItem|}}
+    {{employee-details employee=modelItem}}
 {{/each}}
 
