@@ -4,9 +4,9 @@ export default Ember.Controller.extend({
   actions: {
     filterByName(param) {
       if (param !== '') {
-        return this.get('store').query('employees', { firstName: param });
+        return this.get('store').query('employee', { firstName: param });
       } else {
-        return this.get('store').findAll('employees');
+        return this.get('store').findAll('employee');
       }
     }
   }
