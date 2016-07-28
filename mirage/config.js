@@ -9,11 +9,11 @@ export default function() {
                     gender: "male",
                     title: "Mr.",
                     dob: "21/04/1986",
-                    age: 29,
-                    salary: 59783.00,
-                    takehome: 41999.84,
-                    incometax: 13316.20,
-                    nationalinsurance: 4466.96
+                    age: "29",
+                    salary: "59783.00",
+                    takehome: "41999.84",
+                    incometax: "13316.20",
+                    nationalinsurance: "4466.96"
                 }
             }, {
                 type: 'employees',
@@ -24,11 +24,11 @@ export default function() {
                     gender: "male",
                     title: "Mr.",
                     dob: "16/04/1979",
-                    age: 36,
-                    salary: 50739.00,
-                    takehome: 36754.32,
-                    incometax: 9698.60,
-                    nationalinsurance: 4286.08
+                    age: "36",
+                    salary: "50739.00",
+                    takehome: "36754.32",
+                    incometax: "9698.60",
+                    nationalinsurance: "4286.08"
                 }
             }, {
                 type: 'employees',
@@ -39,11 +39,11 @@ export default function() {
                     gender: "male",
                     title: "Mr.",
                     dob: "18/05/1992",
-                    age: 23,
-                    salary: 26389.00,
-                    takehome: 21032.00,
-                    incometax: 3157.80,
-                    nationalinsurance: 2199.48
+                    age: "23",
+                    salary: "26389.00",
+                    takehome: "21032.00",
+                    incometax: "3157.80",
+                    nationalinsurance: "2199.48"
                 }
         }];
 

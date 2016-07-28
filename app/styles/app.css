@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,700,700italic);
+
+/**
+ * Base Elements
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a {
+  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background: #f3f3f3;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+a {
+  color: #2185D0;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/*
+ * Payroll elements 
+*/
+
+.payroll-title {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.employees-filter input {
+    padding: 11px;
+    font-size: 18px;
+    width: 70%;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: solid 1px lightgray;
+    display: block;
+}
+
+/*
+ * Employee details elements
+ */
+
+.employee-card {
+    margin: 20px auto;
+    background-color: #88d0d0;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+}
+
+.employee-card > section {
+    display: inline-block;
+}
+
+.employee-name {
+    font-size: 20px;
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.personal-details .detail {
+    display: inline-block;
+    margin: 10px 15px 0 0;
+}
+
+.personal-details .detail > span:first-child {
+    color: #545454;
+}
+
+.salary-details {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.salary-details .detail > span:first-child {
+    width: 70%;
+    display: inline-block;
+}
+
+.salary-details .detail > span:nth-child(2) {
+    text-align: right;
+    display: inline-block;
+    width: 30%;
+}
+
+/* 
+ * Responsive setup
+ */
+
+ @media (max-width: 1400px) {
+    body {
+        width: 90%;
+    }
+ }
+
+ @media (max-width: 730px) {
+    .salary-details {
+        width: 80%;
+    }
+
+    .employee-card > section {
+        display: block;
+    }
+
+    .employee-name {
+        font-size: 20px;
+        width: 100%;
+        display: block;
+    }
+}

@@ -1,21 +1,37 @@
-<article>
-    <h3>{{employee.title}} {{employee.firstname}} {{employee.surname}}</h3>
-    <div>
-      <span>Gender:</span> {{employee.gender}}
+<article class="employee-card">
+    <div class="employee-name">
+        <h3>{{employee.title}} {{employee.fullname}}</h3>
     </div>
-    <div>
-      <span>DOB:</span> {{employee.dob}}
-    </div>
-    <div>
-      <span>Age:</span> {{employee.age}}
-    </div>
-    <div>
-      <span>Salary:</span> {{employee.salary}}
-    </div> <div>
-      <span>Income Tax:</span> {{employee.incometax}}
-    </div> <div>
-      <span>National Insurance:</span> {{employee.nationalinsurance}}
-    </div> <div>
-      <span>Take home amount:</span> {{employee.takehome}}
-    </div>
+
+    <section class="personal-details">
+        <div class="detail">
+          <span>gender:</span> {{employee.gender}}
+        </div>
+
+        <div class="detail">
+          <span>dob:</span> {{employee.dob}}
+        </div>
+
+        <div class="detail">
+          <span>age:</span> {{employee.age}}
+        </div>
+    </section>
+
+    <section class="salary-details">
+        <div class="detail">
+          <span>Salary:</span><span>{{employee.salary}}</span>
+        </div> 
+
+        <div class="detail">
+          <span>Income Tax:</span><span>{{employee.incometax}}</span>
+        </div> 
+
+        <div class="detail">
+          <span>National Insurance:</span><span>{{employee.nationalinsurance}}</span>
+        </div> 
+
+        <div class="detail">
+          <span>Take Home:</span><span>{{employee.takehome}}</span>
+        </div>
+    </section>
 </article>
