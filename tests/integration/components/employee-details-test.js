@@ -11,14 +11,13 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{employee-details}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$('.detail>span').text().trim(), 'gender:dob:age:Salary:Income Tax:National Insurance:Take Home:');
 
   // Template block usage:
   this.render(hbs`
     {{#employee-details}}
-      template block text
     {{/employee-details}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$('.detail>span').text().trim(), 'gender:dob:age:Salary:Income Tax:National Insurance:Take Home:');
 });
