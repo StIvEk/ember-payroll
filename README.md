@@ -21,7 +21,7 @@ In order to run the application and the tests of the application you will need [
 ## Installation
 
 #### 1. Clone this repository
-`git clone <repository-url>`
+`git clone https://github.com/StIvEk/payroll.git`
 
 #### 2. Install lite-server (to run the application only) or Ember CLI (to run the application and the tests)
 ##### lite-server installation  
