@@ -13,12 +13,10 @@ You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [PhantomJS](http://phantomjs.org/)
 
 In order to run the application only you can install [lite-server](https://github.com/johnpapa/lite-server) as described in the next [section](#installation).
 
-In order to run the application and the tests of the application you will need [Ember CLI](http://ember-cli.com/) installed as described in the next [section](#installation).
+In order to run the application and the tests of the application you will need [Ember CLI](http://ember-cli.com/), [Bower](http://bower.io/) and [PhantomJS](http://phantomjs.org/) installed as described in the next [section](#installation).
 
 ## Installation
 
@@ -29,9 +27,11 @@ In order to run the application and the tests of the application you will need [
 ##### lite-server installation  
 `npm install -g lite-server`
 
-##### Ember CLI installation 
-* `npm install -g ember-cli@2.7`
+##### Ember CLI, Bower, PhantomJS installation 
 * change into payroll directory
+* `npm install -g ember-cli@2.7`
+* `npm install -g bower`
+* `npm install phantomjs-prebuilt`
 * `npm install`
 * `bower install`
 
