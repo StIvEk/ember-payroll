@@ -1,7 +1,11 @@
 # Payroll
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Payroll is a demo application build with Ember.js.
+
+The application presents a list of employees with their personal and salary details. It allows filtering the list by employee first or surname.
+The employees list is provided by a backend REST service mocked-up with Ember CLI Mirage.  
+
+This README outlines the details of installing the application.
 
 ## Prerequisites
 
@@ -9,45 +13,42 @@ You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+
+In order to run the application only you can install [lite-server](https://github.com/johnpapa/lite-server) as described in the next [section](#installation).
+
+In order to run the application and the tests of the application you will need [Ember CLI](http://ember-cli.com/) installed as described in the next [section](#installation).
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+#### 1. Clone this repository
+`git clone <repository-url>`
 
-## Running / Development
+#### 2. Install lite-server (to run the application only) or Ember CLI (to run the application and the tests)
+* lite-server installation  
+`npm install -g lite-server`
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Ember CLI installation
+`npm install -g ember-cli@2.7`
 
-### Code Generators
+## Running
+### Running the application
+##### If using lite-server:
+* change into payroll/dist directory
+* `lite-server`
+* Open [http://localhost:3000](http://localhost:3000)
 
-Make use of the many generators for code, try `ember help generate` for more details
+##### If using Ember CLI
+* change into payroll directory
+* `ember server`
+* Open [http://localhost:4200](http://localhost:4200)
 
 ### Running Tests
 
 * `ember test`
 * `ember test --server`
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+* [ember-cli-mirage](http://www.ember-cli-mirage.com/)
