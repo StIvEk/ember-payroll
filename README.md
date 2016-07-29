@@ -2,7 +2,7 @@
 
 Payroll is a demo application build with Ember.js.
 
-The application presents a list of employees with their personal and salary details. It allows filtering the list by employee first or surname.
+The application presents a list of employees with their personal and salary details. It allows filtering the list by employee first name or surname.
 The employees list is provided by a backend REST service mocked-up with Ember CLI Mirage.  
 
 This README outlines the details of installing the application.
@@ -13,6 +13,8 @@ You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
+* [Bower](http://bower.io/)
+* [PhantomJS](http://phantomjs.org/)
 
 In order to run the application only you can install [lite-server](https://github.com/johnpapa/lite-server) as described in the next [section](#installation).
 
@@ -24,15 +26,19 @@ In order to run the application and the tests of the application you will need [
 `git clone <repository-url>`
 
 #### 2. Install lite-server (to run the application only) or Ember CLI (to run the application and the tests)
-* lite-server installation  
+##### lite-server installation  
 `npm install -g lite-server`
 
-* Ember CLI installation
-`npm install -g ember-cli@2.7`
+##### Ember CLI installation 
+* `npm install -g ember-cli@2.7`
+* change into payroll directory
+* `npm install`
+* `bower install`
+
 
 ## Running
 ### Running the application
-##### If using lite-server:
+##### If using lite-server
 * change into payroll/dist directory
 * `lite-server`
 * Open [http://localhost:3000](http://localhost:3000)
