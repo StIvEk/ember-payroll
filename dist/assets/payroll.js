@@ -923,7 +923,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("payroll/app")["default"].create({"name":"payroll","version":"0.0.0+3fdff222"});
+  require("payroll/app")["default"].create({"name":"payroll","version":"0.0.0+90c4ffd6"});
 }
 
 /* jshint ignore:end */
