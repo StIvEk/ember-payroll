@@ -2,10 +2,10 @@
 
 {{#employees-filter
     filter=(action 'filterByName')
-    as |result|}}
+    as |filteredEmployees|}}
     <ul class="results">
-        {{#each result as |resultItem|}}
-            <li>{{employee-details employee=resultItem}}</li>
+        {{#each filteredEmployees as |filteredEmployee|}}
+            <li>{{employee-details employee=filteredEmployee}}</li>
         {{/each}}
     </ul>
 {{/employees-filter}}

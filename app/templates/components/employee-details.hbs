@@ -5,33 +5,33 @@
 
     <section class="personal-details">
         <div class="detail">
-          <span>gender:</span> {{employee.gender}}
+          <span>gender:</span><span class="value">{{employee.gender}}</span>
         </div>
 
         <div class="detail">
-          <span>dob:</span> {{employee.dob}}
+          <span>dob:</span><span class="value">{{employee.dob}}</span>
         </div>
 
         <div class="detail">
-          <span>age:</span> {{employee.age}}
+          <span>age:</span><span class="value">{{employee.age}}</span>
         </div>
     </section>
 
     <section class="salary-details">
         <div class="detail">
-          <span>Salary:</span><span>{{employee.salary}}</span>
+          <span class="label">Salary:</span><span class="value">{{employee.salary}}</span>
         </div> 
 
         <div class="detail">
-          <span>Income Tax:</span><span>{{employee.incometax}}</span>
+          <span class="label">Income Tax:</span><span class="value deduction">{{employee.incometax}}</span>
         </div> 
 
         <div class="detail">
-          <span>National Insurance:</span><span>{{employee.nationalinsurance}}</span>
+          <span class="label">National Insurance:</span><span class="value deduction">{{employee.nationalinsurance}}</span>
         </div> 
 
         <div class="detail">
-          <span>Take Home:</span><span>{{employee.takehome}}</span>
+          <span class="label">Take Home:</span><span class="value">{{employee.takehome}}</span>
         </div>
     </section>
 </article>
