@@ -52,16 +52,16 @@ p {
 
 .payroll-title {
     width: 100%;
-    margin: 10px auto;
+    margin: 5% 0;
     text-align: center;
 }
 
 .employees-filter input {
-    padding: 11px;
+    padding: 2%;
     font-size: 18px;
     width: 70%;
     margin: 40px auto;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: #fcfcfc;
     border: solid 1px lightgray;
     display: block;
 }
@@ -71,7 +71,7 @@ p {
  */
 
 .employee-card {
-    margin: 20px auto;
+    margin: 2% auto;
     background-color: #88d0d0;
     border: 1px solid #f0f0f0;
     padding: 10px;
@@ -99,7 +99,8 @@ p {
 
 .salary-details {
     width: 50%;
-    margin-top: 10px;
+    margin-top: 2%;
+    font-size: 1.1em;
 }
 
 .salary-details .detail > span:first-child {
@@ -108,13 +109,13 @@ p {
 }
 
 .salary-details .detail > span:nth-child(2) {
-    text-align: right;
     display: inline-block;
     width: 30%;
+    text-align: right;
 }
 
 /* 
- * Responsive setup
+ * Responsive
  */
 
  @media (max-width: 1400px) {
@@ -125,7 +126,7 @@ p {
 
  @media (max-width: 730px) {
     .salary-details {
-        width: 80%;
+        width: 100%;
     }
 
     .employee-card > section {
@@ -133,8 +134,14 @@ p {
     }
 
     .employee-name {
-        font-size: 20px;
         width: 100%;
         display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .personal-details .detail {
+        display: block;
+        margin: 0;
     }
 }
